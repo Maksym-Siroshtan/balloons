@@ -2,7 +2,7 @@ body
   font-family: "Roboto", sans-serif
   font-weight: 400
   color: $color-gray
-  font-size: 1.6rem
+  font-size: $standart-size
   letter-spacing: .2rem
 
 .title-first
@@ -32,3 +32,26 @@ body
     backface-visibility: hidden
     margin-bottom: 5rem
     animation-fill-mode: backwards
+
+.title-secondary
+  font-size: $title-secondary-size
+  letter-spacing: 1rem
+  text-transform: uppercase
+  font-weight: 800
+  background: linear-gradient(90deg, rgba($brown-color-light, 0.70) 0.03%, rgba($brown-color-dark, 0.70) 99.94%)
+  -webkit-background-clip: text
+  color: transparent
+  backface-visibility: hidden
+  transition: all .4s
+  &:hover
+    transform: skewX(10deg) skewY(2deg) scale(1.1)
+    text-shadow: $text-shadow-title
+
+.title-third
+  font-size: $title-third-size
+  letter-spacing: .2rem
+  text-transform: uppercase
+  font-weight: 700
+
+.paragraph
+  line-height: 140%

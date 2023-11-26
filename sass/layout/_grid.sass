@@ -1,15 +1,12 @@
 .row
   max-width: $grid-width
-  background: pink
   margin: 0 auto
   &:not(:last-child)
-    margin-bottom: $margin-vertical-big
+    margin-bottom: $margin-vertical-80px
   @include clearfix
 
 [class^="col-"]
   float: left
-  background: green
-  color: white
   &:not(:last-child)
     margin-right: $gutter-horizontal
 .col-1-of-2
