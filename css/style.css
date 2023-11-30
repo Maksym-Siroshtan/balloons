@@ -367,13 +367,14 @@ body {
   color: #777777;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  border-radius: 0.5rem;
   -webkit-box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
           box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
 }
 .tour-card__side_back {
-  background: linear-gradient(120deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  background: linear-gradient(120deg, #BA8554, #A14F03);
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -384,6 +385,79 @@ body {
 .tour-card:hover .tour-card__side_back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+.tour-card__img {
+  height: 21rem;
+  background-blend-mode: hard-light;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  margin-bottom: 6rem;
+}
+.tour-card__img_first {
+  background: #BA8554 url("../img/card-tour-1.jpg") center/cover no-repeat;
+}
+.tour-card__img_secondary {
+  background: #BA8554 url("../img/card-tour-2.jpg") center/cover no-repeat;
+}
+.tour-card__img_third {
+  background: #BA8554 url("../img/card-tour-3.jpg") center/cover no-repeat;
+}
+.tour-card__title {
+  position: absolute;
+  top: 17rem;
+  right: 0;
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #FAFAFA;
+}
+.tour-card__span {
+  background: -webkit-gradient(linear, left top, right top, from(#BA8554), to(#A14F03));
+  background: linear-gradient(90deg, #BA8554, #A14F03);
+  padding: 1rem 2rem 0.2rem 2rem;
+}
+.tour-card__span_secondary {
+  position: absolute;
+  top: 3.4rem;
+  right: 0;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.tour-card__descr ul {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+.tour-card__descr ul li {
+  list-style: none;
+  border-bottom: 1px solid #777777;
+}
+.tour-card__descr ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.tour-card__backSide-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+.tour-card__paragraph {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+  color: #FAFAFA;
+}
+.tour-card__paragraph_first {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.tour-card__paragraph_secondary {
+  font-size: 6rem;
+  font-weight: 500;
 }
 
 .row {
