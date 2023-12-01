@@ -103,7 +103,7 @@ body {
 }
 
 .container {
-  background-color: #F7F7F7;
+  background-color: #E5E5E5;
 }
 
 body {
@@ -170,6 +170,9 @@ body {
           backface-visibility: hidden;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+.title-secondary_white {
+  color: #FAFAFA;
 }
 .title-secondary:hover {
   -webkit-transform: skewX(10deg) skewY(2deg) scale(1.1);
@@ -352,11 +355,11 @@ body {
 }
 
 .tour-card {
+  position: relative;
   height: 52rem;
   -webkit-perspective: 150rem;
           perspective: 150rem;
   -moz-perspective: 150rem;
-  position: relative;
 }
 .tour-card__side {
   position: absolute;
@@ -364,6 +367,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  background: #FAFAFA;
   color: #777777;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -460,6 +464,66 @@ body {
   font-weight: 500;
 }
 
+.feedback-card {
+  width: 85%;
+  padding: 6rem;
+  margin: 0 auto;
+  background: rgba(250, 250, 250, 0.75);
+  -webkit-box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
+  -webkit-transform: skewX(330deg);
+          transform: skewX(330deg);
+}
+.feedback-card > * {
+  -webkit-transform: skewX(-330deg);
+          transform: skewX(-330deg);
+}
+.feedback-card__img {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  border-radius: 100rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  margin-right: 4rem;
+  overflow: hidden;
+}
+.feedback-card__img img {
+  height: 100%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.feedback-card__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.feedback-card:hover .feedback-card__name {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.feedback-card:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: blur(0.3rem) brightness(70%);
+          filter: blur(0.3rem) brightness(70%);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -530,7 +594,8 @@ body {
 }
 
 .section-about {
-  padding: 8rem 0;
+  padding-top: 8rem;
+  margin-bottom: 17rem;
 }
 
 .section-adventure {
@@ -546,4 +611,9 @@ body {
 
 .section-tour {
   padding-top: 21.5rem;
+  margin-bottom: 8rem;
+}
+
+.section-feedback {
+  padding-top: 8rem;
 }
