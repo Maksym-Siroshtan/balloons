@@ -1,9 +1,7 @@
 body
   font-family: "Roboto", sans-serif
-  font-weight: 400
+  @include standart-typography
   color: $color-gray
-  font-size: $paragraph-size
-  letter-spacing: .2rem
 
 .title-first
   color: $color-white
@@ -56,8 +54,6 @@ body
   font-weight: 700
 
 .paragraph
-  font-size: $paragraph-size
-  letter-spacing: .2rem
+  @include standart-typography
   line-height: 140%
-  font-weight: 400
   color: $color-gray

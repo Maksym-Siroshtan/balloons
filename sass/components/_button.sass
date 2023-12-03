@@ -1,17 +1,17 @@
 // Компонент кнопки
 .btn
-  &:link, &:visited
+  &, &:link, &:visited
     @include style-link($color-gray)
     position: relative
     font-size: 2rem
-    font-weight: 600
+    font-weight: 500
     letter-spacing: .5rem
     padding: 1.5rem 4rem
     background: $color-white
     border-radius: 5rem
     transition: all .3s
     animation-fill-mode: backwards
-
+    border: none
   &:hover
     transform: translateY(-0.4rem)
     box-shadow: $box-shadow
@@ -35,3 +35,11 @@
     transition: all .4s
   &_animated
     animation: btnToUp .5s ease-out 2s
+
+.btn_brown
+  &, &:link, &:visited
+    background: $brown-color-light
+    color: $color-white
+  &:hover
+  &::after
+    background: $brown-color-light
