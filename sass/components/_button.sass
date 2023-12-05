@@ -12,6 +12,9 @@
     transition: all .3s
     animation-fill-mode: backwards
     border: none
+    @include respond(tab-land)
+      font-size: 1.6rem
+      padding: 1.3rem 3rem
   &:hover
     transform: translateY(-0.4rem)
     box-shadow: $box-shadow
@@ -33,6 +36,7 @@
     border-radius: 5rem
     z-index: -1
     transition: all .4s
+
   &_animated
     animation: btnToUp .5s ease-out 2s
 
