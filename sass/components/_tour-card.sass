@@ -3,6 +3,7 @@
   height: 52rem
   perspective: 150rem
   -moz-perspective: 150rem
+
   &__side
     position: absolute
     top: 0
@@ -36,6 +37,7 @@
       background: $brown-color-light url('../img/card-tour-2.jpg') center / cover no-repeat
     &_third
       background: $brown-color-light url('../img/card-tour-3.jpg') center / cover no-repeat
+
   &__title
     position: absolute
     top: 17rem
@@ -46,6 +48,7 @@
     text-transform: uppercase
     text-align: right
     color: $color-white
+
   &__span
     background: linear-gradient(90deg, $brown-color-light, $brown-color-dark)
     padding: 1rem 2rem .2rem 2rem
@@ -56,6 +59,7 @@
       right: 0
       padding-top: 0
       padding-bottom: 1rem
+
   &__descr
     ul
       width: 75%
@@ -66,12 +70,17 @@
         border-bottom: 1px solid $color-gray
         &:not(:last-child)
           margin-bottom: 2rem
+        @include respond(tab-land)
+          &:not(:last-child)
+            margin-bottom: 1.7rem
+
   &__backSide-wrapper
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     text-align: center
+
   &__paragraph
     letter-spacing: .2rem
     text-transform: uppercase
