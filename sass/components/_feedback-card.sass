@@ -7,8 +7,13 @@
   transform: skewX(330deg)
   @include respond(tab-land)
     padding: 5rem
+  @include respond(tab-port)
+    transform: skewX(350deg)
+    padding: 3rem
   & > *
     transform: skewX(-330deg)
+    @include respond(tab-port)
+      transform: skewX(-350deg)
 
   &__img
     position: relative

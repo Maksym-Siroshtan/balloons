@@ -164,6 +164,12 @@ body {
     font-size: 4rem;
   }
 }
+@media (max-width: 900px) {
+  .title-first__main {
+    font-size: 3.6rem;
+    letter-spacing: 0.5rem;
+  }
+}
 .title-first__secondary {
   display: block;
   font-size: 4rem;
@@ -189,6 +195,11 @@ body {
     margin-bottom: 3.5rem;
   }
 }
+@media (max-width: 900px) {
+  .title-first__secondary {
+    font-size: 2.6rem;
+  }
+}
 
 .title-secondary {
   display: inline-block;
@@ -207,7 +218,13 @@ body {
 }
 @media (max-width: 1240px) {
   .title-secondary {
-    font-size: 2.9rem;
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 900px) {
+  .title-secondary {
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
   }
 }
 .title-secondary_white {
@@ -263,6 +280,11 @@ body {
 .margin-bottom-80px {
   margin-bottom: 8rem;
 }
+@media (max-width: 900px) {
+  .margin-bottom-80px {
+    margin-bottom: 5rem;
+  }
+}
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -286,6 +308,11 @@ body {
   .btn, .btn:link, .btn:visited {
     font-size: 1.6rem;
     padding: 1.3rem 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .btn, .btn:link, .btn:visited {
+    font-size: 2rem;
   }
 }
 .btn:hover {
@@ -430,6 +457,11 @@ body {
           perspective: 150rem;
   -moz-perspective: 150rem;
 }
+@media (max-width: 900px) {
+  .tour-card {
+    height: 64rem;
+  }
+}
 .tour-card__side {
   position: absolute;
   top: 0;
@@ -466,6 +498,12 @@ body {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   margin-bottom: 6rem;
 }
+@media (max-width: 900px) {
+  .tour-card__img {
+    height: 30rem;
+    margin-bottom: 7rem;
+  }
+}
 .tour-card__img_first {
   background: #C3956A url("../img/card-tour-1.jpg") center/cover no-repeat;
 }
@@ -486,6 +524,11 @@ body {
   text-align: right;
   color: #FAFAFA;
 }
+@media (max-width: 900px) {
+  .tour-card__title {
+    top: 25rem;
+  }
+}
 .tour-card__span {
   background: -webkit-gradient(linear, left top, right top, from(#C3956A), to(#A14F03));
   background: linear-gradient(90deg, #C3956A, #A14F03);
@@ -504,6 +547,7 @@ body {
   text-align: center;
 }
 .tour-card__descr ul li {
+  display: inline-block;
   list-style: none;
   border-bottom: 1px solid #777777;
 }
@@ -511,8 +555,13 @@ body {
   margin-bottom: 2rem;
 }
 @media (max-width: 1240px) {
-  .tour-card__descr ul li:not(:last-child) {
-    margin-bottom: 1.7rem;
+  .tour-card__descr ul li {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 900px) {
+  .tour-card__descr ul li {
+    font-size: 2.3rem;
   }
 }
 .tour-card__backSide-wrapper {
@@ -553,9 +602,22 @@ body {
     padding: 5rem;
   }
 }
+@media (max-width: 900px) {
+  .feedback-card {
+    -webkit-transform: skewX(350deg);
+            transform: skewX(350deg);
+    padding: 3rem;
+  }
+}
 .feedback-card > * {
   -webkit-transform: skewX(-330deg);
           transform: skewX(-330deg);
+}
+@media (max-width: 900px) {
+  .feedback-card > * {
+    -webkit-transform: skewX(-350deg);
+            transform: skewX(-350deg);
+  }
 }
 .feedback-card__img {
   position: relative;
@@ -633,10 +695,20 @@ body {
           box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
+@media (max-width: 900px) {
+  .book {
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 507%, rgba(186, 133, 84, 0.3) 57%, rgba(161, 79, 3, 0.3) 100%), url("../img/bg-form.jpg") center/cover no-repeat;
+  }
+}
 
 .form {
   width: 70%;
   padding: 5rem;
+}
+@media (max-width: 900px) {
+  .form {
+    width: 100%;
+  }
 }
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
@@ -654,6 +726,11 @@ body {
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 900px) {
+  .form__group:nth-child(4) {
+    margin-bottom: 4rem;
+  }
+}
 .form__input {
   width: 78%;
   font-size: 1.6rem;
@@ -665,6 +742,13 @@ body {
   border-radius: 0.5rem;
   background: #FAFAFA;
   color: #000000;
+}
+@media (max-width: 900px) {
+  .form__input {
+    width: 100%;
+    -webkit-box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
+  }
 }
 .form__input:focus {
   outline: none;
@@ -704,6 +788,8 @@ body {
 @media (max-width: 1240px) {
   .form__group-radio {
     display: block;
+  }
+  .form__group-radio:not(:last-child) {
     margin-bottom: 2rem;
   }
 }
@@ -762,17 +848,13 @@ body {
     max-width: 90.1rem;
   }
 }
-
-[class^=col-] {
-  float: left;
-}
-[class^=col-]:not(:last-child) {
-  margin-right: 6rem;
-}
-@media (max-width: 1240px) {
-  [class^=col-]:not(:last-child) {
-    margin-right: 2rem;
+@media (max-width: 900px) {
+  .row {
+    max-width: 60rem;
   }
+}
+.row:not(:last-child) {
+  margin-bottom: 5rem;
 }
 
 .col-1-of-2 {
@@ -807,6 +889,25 @@ body {
 
 .col-3-of-4 {
   width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
+}
+
+[class^=col-] {
+  float: left;
+}
+[class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+@media (max-width: 1240px) {
+  [class^=col-]:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  [class^=col-] {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 3rem;
+  }
 }
 
 .header {
@@ -861,6 +962,12 @@ body {
     margin-right: 1.6rem;
   }
 }
+@media (max-width: 900px) {
+  .footer__item:not(:last-child) {
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+  }
+}
 .footer__link:link, .footer__link:visited {
   display: inline-block;
   font-size: 1.6rem;
@@ -892,6 +999,8 @@ body {
   right: 10rem;
   text-align: center;
   background: #FAFAFA;
+  -webkit-box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.25);
   cursor: pointer;
   z-index: 200;
 }
@@ -1013,6 +1122,11 @@ body {
     margin-bottom: 12rem;
   }
 }
+@media (max-width: 900px) {
+  .section-about {
+    margin-bottom: 40rem;
+  }
+}
 
 .section-adventure {
   padding: 21.5rem 0;
@@ -1030,6 +1144,11 @@ body {
     padding: 14rem 0;
   }
 }
+@media (max-width: 900px) {
+  .section-adventure {
+    padding: 12rem 0;
+  }
+}
 
 .section-tour {
   padding-top: 21.5rem;
@@ -1039,6 +1158,11 @@ body {
   .section-tour {
     padding: 14rem 0;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 900px) {
+  .section-tour {
+    padding: 9rem 0;
   }
 }
 
